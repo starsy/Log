@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-extension Themes {
+@objc extension Themes {
     public static let `default` = Theme(
         trace:   "#C8C8C8",
         debug:   "#0000FF",

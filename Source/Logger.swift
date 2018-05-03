@@ -24,7 +24,7 @@
 
 private let benchmarker = Benchmarker()
 
-public enum Level {
+@objc public enum Level {
     case trace, debug, info, warning, error
     
     var description: String {
@@ -32,7 +32,7 @@ public enum Level {
     }
 }
 
-extension Level: Comparable {}
+@objc extension Level: Comparable {}
 
 public func ==(x: Level, y: Level) -> Bool {
     return x.hashValue == y.hashValue
@@ -42,7 +42,7 @@ public func <(x: Level, y: Level) -> Bool {
     return x.hashValue < y.hashValue
 }
 
-open class Logger {
+@objc open class Logger {
     /// The logger state.
     public var enabled: Bool = true
     

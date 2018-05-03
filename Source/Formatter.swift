@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-public enum Component {
+@objc public enum Component {
     case date(String)
     case message
     case level
@@ -34,9 +34,9 @@ public enum Component {
     case block(() -> Any?)
 }
 
-public class Formatters {}
+@objc public class Formatters {}
 
-public class Formatter: Formatters {
+@objc public class Formatter: Formatters {
     /// The formatter format.
     private var format: String
     

@@ -22,9 +22,9 @@
 // SOFTWARE.
 //
 
-public class Themes {}
+@objc public class Themes {}
 
-public class Theme: Themes {
+@objc public class Theme: Themes {
     /// The theme colors.
     internal var colors: [Level: String]
     

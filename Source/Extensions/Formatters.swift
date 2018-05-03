@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-extension Formatters {
+@objc extension Formatters {
     public static let `default` = Formatter("[%@] %@ %@: %@", [
         .date("yyyy-MM-dd HH:mm:ss.SSS"),
         .location,
